@@ -23,7 +23,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar class="oculto-impresion" app>
+    <v-app-bar class="oculto-impresion" app >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>My App</v-toolbar-title>
@@ -55,6 +55,8 @@ export default {
     email: localStorage.getItem("email"),
     items: [
       { title: "Billing", icon: "mdi-printer", to: 'billing'},
+      { title: "Clients", icon: "mdi-account-box", to: 'clients'},
+      { title: "Configuration", icon: 'mdi-cog', to: 'configuration'}
     ],
   }),
   methods: {
